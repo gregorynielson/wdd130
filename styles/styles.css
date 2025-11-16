@@ -19,6 +19,7 @@ main img {
     height: auto;
     border: 1px solid black;
     box-shadow: 0 0 30px gray;
+    padding: 0;
 }
 p {
     padding: 0;
