@@ -1,8 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --main-color: darkblue;
     --border: 1px solid black;
     --padding: 10px;
 
+}
+
+body{
+    font-size: 16px;
+    font-family: Jost, sans-serif, arial;
+}
+.jost- {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
 }
 
 nav {
@@ -12,35 +29,41 @@ nav {
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: 12px;
 }
 main {
-    max-width: 840px;
+    max-width: 640px;
 }
 
 h1 {
     color: var(--main-color);
+    padding: 0.5rem;
 }
 main img {
     width: 150px;
     height: auto;
     border: var(--border);
     box-shadow: 0 0 30px gray;
-    padding: 0;
+    padding: 2px;
+    float: right;
+    margin: 2rem 0 1rem 1rem;
 }
 p {
+    margin: 1rem;
     padding: var(--padding);
+    width: 500px;
     
     
 }
 
 aside {
-    width: 100%;
+    width: 608px;
     margin: 0;
     border: 0;
     padding: var(--padding);
     background-color: var(--main-color);
     color: white;
+    position: relative;
 }
 
 aside img {
@@ -48,8 +71,27 @@ aside img {
     height: auto;
 }
 
+aside h2 {
+    position: absolute;
+    top: 10px;
+    left: 250px;
+}
+
 footer {
     margin-top: 10px;
     border-top: var(--border);
     text-align: center;
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0,0,0,.1);
+    padding: 1rem;
+    background-color: #eee;
+    color: #000;
+}
+
+.indent{
+    padding-left: 2rem;
 }
