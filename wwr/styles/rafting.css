@@ -84,8 +84,8 @@ article {
     margin: 0;
     width: 100%;
     opacity: 0.7;
-    background-color: var(--secondary-color);
-    color: #fff;
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
     top: 350px;
 
 }
