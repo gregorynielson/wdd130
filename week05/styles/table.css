@@ -1,0 +1,41 @@
+
+table {
+    border-collapse: collapse;
+    border: 2px solid black;
+    letter-spacing: 1px;
+}
+
+thead {
+    background-color: black;
+    color: white;
+    
+}
+
+th {
+    text-align: center;
+    border: 1px solid black;
+    padding: 8px 12px;
+}
+
+thead th {
+    border: 1px solid white;
+}
+
+td {
+    text-align: center;
+    border: 1px solid black;
+    padding: 8px 12px;
+}
+
+.grayout {
+    background-color: lightgray;
+}
+
+tfoot {
+    background-color: black;
+    color: white;
+}
+
+tfoot th {
+    border: 1px solid white;
+}
