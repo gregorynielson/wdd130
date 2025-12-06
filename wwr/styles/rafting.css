@@ -122,20 +122,28 @@ article {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
-    align-items: center;
-    
-    
+    align-items: center;    
+}
+
+.team {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-content: space-evenly;
+}
+
+.team h2 {
+    grid-column: 1/6;
 }
 
 .adventure h2 {
     grid-column: 1/6;
 }
 
-.adventure img {
+.adventure img, .team img {
     width: 150px;
 }
-
-
 
 h2 {
     width: 100%;
@@ -144,6 +152,36 @@ h2 {
     opacity: 0.7;
     background-color: var(--accent2-color);
     color: #fff;
+}
+
+.info {
+    display: grid;
+    text-align: center;
+}
+
+.info p {
+    padding: 0;
+}
+
+.map-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+iframe {
+    width: 350px;
+    height: 350px;
+    border-color: var(--accent1-color);
+}
+
+.name input, .email input, textarea {
+    padding: 1rem;
+    width: 300px;
+}
+
+button {
+    padding: 1rem;
+    width: 300px;
 }
 
 footer {
