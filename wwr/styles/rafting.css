@@ -36,9 +36,18 @@ header {
     list-style: none;
     flex: 1 1 auto;
     justify-content: space-evenly;
-    padding: 15px;
-    
 }
+
+.navigation a {
+    border: 2.5px solid var(--primary-color);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+a, .socialmedia a {
+    text-decoration: none;
+}
+
 
 h1, h2 {
     font-family: var(--heading-font);
@@ -48,10 +57,6 @@ h1, h2 {
 nav, p, section, article {
     margin: 16px;
     padding: 8px;
-}
-
-.socialmedia a {
-    text-decoration: none;
 }
 
 .hero {
@@ -103,8 +108,6 @@ article {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 4fr;
     gap: 10px;
-    
-
 }
 
 .history h2 {
@@ -141,7 +144,7 @@ article {
     grid-column: 1/6;
 }
 
-.adventure img, .team img {
+.adventure img, .team img, .options img {
     width: 150px;
 }
 
@@ -176,7 +179,9 @@ iframe {
     width: 350px;
     height: 350px;
     border-color: var(--accent1-color);
+    margin-top: 50px;
 }
+
 
 .name input, .email input, textarea {
     padding: 1rem;
@@ -191,7 +196,126 @@ button {
     font-size: 1.25rem;
     border: none;
     border-radius: 5px;
+}
 
+.trips {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    padding: 30px; 
+    
+}
+
+.trips h1 {
+    margin-top: 100px;
+    width: 900px;
+}
+
+.trips img {
+    width: 300px;
+    border: 5px solid var(--primary-color);
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.question img {
+    width: 250px;
+}
+
+.question a {
+    padding: 1rem;
+    width: 132px;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.newsletter form, .map-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+    border: 2px solid var(--primary-color);
+    border-radius: 25px;
+    margin: 10px;
+    
+}
+
+.newsletter button {
+    width: 150px;
+}
+
+.options {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    align-items: center;  
+}
+
+.options h2 {
+    grid-column: 1/5;
+}
+
+.trips figure, .options figure, .team figure {
+    display: grid;
+    justify-items: center;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid var(--accent2-color);
+    letter-spacing: 1px;
+    margin: 5px;
+}
+
+thead {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    
+}
+
+th {
+    text-align: center;
+    border: 1px solid var(--accent2-color);
+    padding: 8px 12px;
+}
+
+thead th {
+    border: 1px solid var(--accent2-color);
+}
+
+td {
+    text-align: center;
+    border: 1px solid var(--accent2-color);
+    padding: 8px 12px;
+}
+
+.table {
+    display: grid;
+    align-content: center;
+}
+
+.row-color {
+    background-color: rgb(255, 165, 0, 0.25);
+}
+
+.hero a {
+    padding: 1rem;
+    width: 132px;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    margin-left: 350px;
 }
 
 footer {
